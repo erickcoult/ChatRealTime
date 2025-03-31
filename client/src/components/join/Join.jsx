@@ -8,7 +8,7 @@ export default function Join({ setChatVisibility, setSocket }) {
     const username = usernameRef.current.value
     if (!username.trim()) return
 
-    const socket = await io.connect('http://localhost:3000')
+    const socket = await io.connect('https://chat-real-time-xi.vercel.app')
     socket.emit('set_username', username)
     setSocket(socket)
     
@@ -27,4 +27,3 @@ export default function Join({ setChatVisibility, setSocket }) {
     </div>
   )
 }
-''
