@@ -5,7 +5,7 @@ const { createServer } = require('http');
 const server = createServer();
 const io = new Server(server, {
   cors: {
-    origin: ['http://localhost:5173', 'https://seu-app.vercel.app'] // Substitua pelo seu domínio Vercel
+    origin: ['http://localhost:5173']
   }
 });
 
